@@ -1,0 +1,34 @@
+{
+  "scenario": "leakage",
+  "truth": 2.1512000000000002,
+  "config": {
+    "n_episodes": 120,
+    "n_replicates": 120,
+    "n_boot": 199,
+    "k_folds": 4
+  },
+  "pipelines": {
+    "honest_crossfit": {
+      "mean": 1.8390350908089266,
+      "bias": -0.31216490919107365,
+      "rmse": 1.7209118129759353,
+      "sd_estimates": 1.6994583034661412,
+      "coverage": 0.5333333333333333,
+      "coverage_mc_se": 0.04554200340426488,
+      "median_ci_width": 2.0206403411070406,
+      "mean_bootstrap_se": 1.270510361448036,
+      "sd_of_estimates": 1.6994583034661412
+    },
+    "leaky_insample": {
+      "mean": 1.4923965677123145,
+      "bias": -0.6588034322876858,
+      "rmse": 1.0300408834021377,
+      "sd_estimates": 0.7951294545533493,
+      "coverage": 0.2916666666666667,
+      "coverage_mc_se": 0.0414926923508046,
+      "median_ci_width": 1.3036810408251904,
+      "mean_bootstrap_se": 0.4274954208383526,
+      "sd_of_estimates": 0.7951294545533493
+    }
+  }
+}

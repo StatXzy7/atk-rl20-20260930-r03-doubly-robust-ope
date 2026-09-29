@@ -1,0 +1,17 @@
+{
+  "scenario": "no_coverage",
+  "truth": 2.1512000000000002,
+  "config": {
+    "n_episodes": 300,
+    "n_replicates": 60
+  },
+  "missing_target_support_pairs": [
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "identification_fail_detected_rate": 1.0,
+  "report": "Target reaches (s=0,a=1) with probability 1 but behavior assigns it probability 0. J(pi) is not identifiable from logged data. Estimators returned NaN and no interval is constructed; there is no epsilon smoothing."
+}
