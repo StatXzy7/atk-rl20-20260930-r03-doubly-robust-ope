@@ -1,0 +1,11 @@
+[good_coverage] done in 282s
+[tail_risk] done in 444s
+# Experiment results
+
+Bootstrap: episode-level, percentile, B per replication; 90% nominal. Coverage is empirical over independent re-collections, not a finite-sample guarantee.
+
+
+## good_coverage  (J=1.8033, n=300, reps=100, mean ESS/n=0.4097)
+
+| estimator | bias | RMSE | coverage | mean CI width | wNaNfrac | MCSE bias | note |
+wrote results/results.json and results/results.md

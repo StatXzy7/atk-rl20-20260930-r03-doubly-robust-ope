@@ -1,0 +1,376 @@
+{
+  "good_coverage": {
+    "mdp": "good_coverage",
+    "truth": 1.8033387230178763,
+    "n_episodes": 300,
+    "n_reps": 100,
+    "B": 100,
+    "alpha": 0.1,
+    "mean_ess_fraction": 0.40968688350483135,
+    "rows": [
+      {
+        "estimator": "PDIS_raw",
+        "bias": 0.006619166180008702,
+        "rmse": 0.09874623009673036,
+        "coverage": 0.87,
+        "mcse_bias": 0.009902047843192192,
+        "mcse_rmse": 0.006462768403955681,
+        "mcse_coverage": 0.03363034344160047,
+        "mean_width": 0.3132054513913832,
+        "n_reps": 100,
+        "note": "unclipped",
+        "mean_ess_fraction": 0.40968688350483135
+      },
+      {
+        "estimator": "SNIS_raw",
+        "bias": 0.0043453162897878015,
+        "rmse": 0.06401049030540275,
+        "coverage": 0.84,
+        "mcse_bias": 0.006418455945320324,
+        "mcse_rmse": 0.004657815458675484,
+        "mcse_coverage": 0.036660605559646724,
+        "mean_width": 0.20571761554103218,
+        "n_reps": 100,
+        "note": "unclipped",
+        "mean_ess_fraction": 0.40968688350483135
+      },
+      {
+        "estimator": "DR_crossfit_raw",
+        "bias": 0.0019501571332712264,
+        "rmse": 0.05717242877603753,
+        "coverage": 0.86,
+        "mcse_bias": 0.0057427015598163845,
+        "mcse_rmse": 0.0033973154508499556,
+        "mcse_coverage": 0.03469870314579494,
+        "mean_width": 0.18341898991308894,
+        "n_reps": 100,
+        "note": "unclipped",
+        "mean_weighted_nan_fraction": 0.0,
+        "mean_ess_fraction": 0.40968688350483135
+      },
+      {
+        "estimator": "DR_crossfit_actionBlind_raw",
+        "bias": 0.0037227601710982917,
+        "rmse": 0.06470227108232429,
+        "coverage": 0.89,
+        "mcse_bias": 0.006492050258958183,
+        "mcse_rmse": 0.004638928144089074,
+        "mcse_coverage": 0.031288975694324025,
+        "mean_width": 0.21249509835729163,
+        "n_reps": 100,
+        "note": "intentional misspecified Q (actions pooled)",
+        "mean_weighted_nan_fraction": 0.0,
+        "mean_ess_fraction": 0.40968688350483135
+      },
+      {
+        "estimator": "DR_insample_LEAKY_raw",
+        "bias": 0.0020310668968763212,
+        "rmse": 0.05654919878951838,
+        "coverage": 0.87,
+        "mcse_bias": 0.005679741289986773,
+        "mcse_rmse": 0.003357628253389958,
+        "mcse_coverage": 0.03363034344160047,
+        "mean_width": 0.1849884910220479,
+        "n_reps": 100,
+        "note": "train==eval leakage; overconfident intervals expected",
+        "mean_weighted_nan_fraction": 0.0,
+        "mean_ess_fraction": 0.40968688350483135
+      },
+      {
+        "estimator": "PDIS_clip20",
+        "bias": 0.006619166180008702,
+        "rmse": 0.09874623009673036,
+        "coverage": 0.87,
+        "mcse_bias": 0.009902047843192192,
+        "mcse_rmse": 0.006462768403955681,
+        "mcse_coverage": 0.03363034344160047,
+        "mean_width": 0.3132054513913832,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props"
+      },
+      {
+        "estimator": "SNIS_clip20",
+        "bias": 0.0043453162897878015,
+        "rmse": 0.06401049030540275,
+        "coverage": 0.84,
+        "mcse_bias": 0.006418455945320324,
+        "mcse_rmse": 0.004657815458675484,
+        "mcse_coverage": 0.036660605559646724,
+        "mean_width": 0.20571761554103218,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props"
+      },
+      {
+        "estimator": "DR_crossfit_clip20",
+        "bias": 0.0019501571332712264,
+        "rmse": 0.05717242877603753,
+        "coverage": 0.86,
+        "mcse_bias": 0.0057427015598163845,
+        "mcse_rmse": 0.0033973154508499556,
+        "mcse_coverage": 0.03469870314579494,
+        "mean_width": 0.18341898991308894,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props",
+        "mean_weighted_nan_fraction": 0.0
+      },
+      {
+        "estimator": "DR_crossfit_actionBlind_clip20",
+        "bias": 0.0037227601710982917,
+        "rmse": 0.06470227108232429,
+        "coverage": 0.89,
+        "mcse_bias": 0.006492050258958183,
+        "mcse_rmse": 0.004638928144089074,
+        "mcse_coverage": 0.031288975694324025,
+        "mean_width": 0.21249509835729163,
+        "n_reps": 100,
+        "note": "intentional misspecified Q (actions pooled)",
+        "mean_weighted_nan_fraction": 0.0
+      },
+      {
+        "estimator": "DR_insample_LEAKY_clip20",
+        "bias": 0.0020310668968763212,
+        "rmse": 0.05654919878951838,
+        "coverage": 0.87,
+        "mcse_bias": 0.005679741289986773,
+        "mcse_rmse": 0.003357628253389958,
+        "mcse_coverage": 0.03363034344160047,
+        "mean_width": 0.1849884910220479,
+        "n_reps": 100,
+        "note": "train==eval leakage; overconfident intervals expected",
+        "mean_weighted_nan_fraction": 0.0
+      }
+    ]
+  },
+  "tail_risk": {
+    "mdp": "tail_risk",
+    "truth": 2.9860916250000002,
+    "n_episodes": 300,
+    "n_reps": 100,
+    "B": 100,
+    "alpha": 0.1,
+    "mean_ess_fraction": 0.02308746871038825,
+    "rows": [
+      {
+        "estimator": "PDIS_raw",
+        "bias": -0.8813249162280709,
+        "rmse": 1.8724731435411472,
+        "coverage": 0.5,
+        "mcse_bias": 0.16604192197063217,
+        "mcse_rmse": 0.3168545880015218,
+        "mcse_coverage": 0.05,
+        "mean_width": 3.033636624842103,
+        "n_reps": 100,
+        "note": "unclipped",
+        "mean_ess_fraction": 0.02308746871038825
+      },
+      {
+        "estimator": "SNIS_raw",
+        "bias": -0.13716756108365377,
+        "rmse": 0.5268791103291747,
+        "coverage": 0.78,
+        "mcse_bias": 0.051127357033673604,
+        "mcse_rmse": 0.052752810855109605,
+        "mcse_coverage": 0.04142463035441595,
+        "mean_width": 1.0396829086672783,
+        "n_reps": 100,
+        "note": "unclipped",
+        "mean_ess_fraction": 0.02308746871038825
+      },
+      {
+        "estimator": "DR_crossfit_raw",
+        "bias": -1.3582538450115655,
+        "rmse": 1.9030533576903585,
+        "coverage": 0.04,
+        "mcse_bias": 0.13396662386722405,
+        "mcse_rmse": 0.3040411314873514,
+        "mcse_coverage": 0.019595917942265423,
+        "mean_width": 1.0091703363216766,
+        "n_reps": 100,
+        "note": "unclipped",
+        "mean_weighted_nan_fraction": 0.07601326762427402,
+        "mean_ess_fraction": 0.02308746871038825
+      },
+      {
+        "estimator": "DR_crossfit_actionBlind_raw",
+        "bias": -0.6563666300947166,
+        "rmse": 1.7785502394092478,
+        "coverage": 0.49,
+        "mcse_bias": 0.16613320081834781,
+        "mcse_rmse": 0.4202171220081905,
+        "mcse_coverage": 0.04998999899979995,
+        "mean_width": 2.465399997649892,
+        "n_reps": 100,
+        "note": "intentional misspecified Q (actions pooled)",
+        "mean_weighted_nan_fraction": 0.0,
+        "mean_ess_fraction": 0.02308746871038825
+      },
+      {
+        "estimator": "DR_insample_LEAKY_raw",
+        "bias": -1.284056520727734,
+        "rmse": 1.5786117516968325,
+        "coverage": 0.07,
+        "mcse_bias": 0.09228928575063801,
+        "mcse_rmse": 0.09533467570823792,
+        "mcse_coverage": 0.02551470164434615,
+        "mean_width": 0.9700646367172415,
+        "n_reps": 100,
+        "note": "train==eval leakage; overconfident intervals expected",
+        "mean_weighted_nan_fraction": 0.0,
+        "mean_ess_fraction": 0.02308746871038825
+      },
+      {
+        "estimator": "PDIS_clip20",
+        "bias": -1.9081427870614036,
+        "rmse": 1.9238449026693691,
+        "coverage": 0.0,
+        "mcse_bias": 0.024653213717291067,
+        "mcse_rmse": 0.024794825843355826,
+        "mcse_coverage": 0.0,
+        "mean_width": 0.7683987008179822,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props"
+      },
+      {
+        "estimator": "SNIS_clip20",
+        "bias": -0.4121300580353322,
+        "rmse": 0.4976364476218759,
+        "coverage": 0.42,
+        "mcse_bias": 0.02803152072573139,
+        "mcse_rmse": 0.0286827628040165,
+        "mcse_coverage": 0.04935585071701227,
+        "mean_width": 0.7661421194032108,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props"
+      },
+      {
+        "estimator": "DR_crossfit_clip20",
+        "bias": -1.459124223973732,
+        "rmse": 1.5386470596130426,
+        "coverage": 0.02,
+        "mcse_bias": 0.0490713017685671,
+        "mcse_rmse": 0.04226352432387724,
+        "mcse_coverage": 0.014,
+        "mean_width": 0.7396918853644726,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props",
+        "mean_weighted_nan_fraction": 0.029512944305033362
+      },
+      {
+        "estimator": "DR_crossfit_actionBlind_clip20",
+        "bias": -1.5503238094006573,
+        "rmse": 1.5663080287294098,
+        "coverage": 0.0,
+        "mcse_bias": 0.02243214839223727,
+        "mcse_rmse": 0.022371585754512206,
+        "mcse_coverage": 0.0,
+        "mean_width": 0.6871734848484004,
+        "n_reps": 100,
+        "note": "intentional misspecified Q (actions pooled)",
+        "mean_weighted_nan_fraction": 0.0
+      },
+      {
+        "estimator": "DR_insample_LEAKY_clip20",
+        "bias": -1.3295679839234376,
+        "rmse": 1.466287573687212,
+        "coverage": 0.07,
+        "mcse_bias": 0.06213769532706025,
+        "mcse_rmse": 0.048022224336113264,
+        "mcse_coverage": 0.02551470164434615,
+        "mean_width": 0.7945015142071443,
+        "n_reps": 100,
+        "note": "train==eval leakage; overconfident intervals expected",
+        "mean_weighted_nan_fraction": 0.0
+      },
+      {
+        "estimator": "PDIS_clip5",
+        "bias": -2.5042570797697374,
+        "rmse": 2.5058674818499993,
+        "coverage": 0.0,
+        "mcse_bias": 0.009027631554225424,
+        "mcse_rmse": 0.009053071802247683,
+        "mcse_coverage": 0.0,
+        "mean_width": 0.2779826193717104,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props"
+      },
+      {
+        "estimator": "SNIS_clip5",
+        "bias": -0.9845679326617851,
+        "rmse": 1.003173211660676,
+        "coverage": 0.0,
+        "mcse_bias": 0.01932771040689164,
+        "mcse_rmse": 0.019980291602872454,
+        "mcse_coverage": 0.0,
+        "mean_width": 0.5238834674104963,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props"
+      },
+      {
+        "estimator": "DR_crossfit_clip5",
+        "bias": -1.459607566511425,
+        "rmse": 1.537974999281254,
+        "coverage": 0.02,
+        "mcse_bias": 0.048711980792148404,
+        "mcse_rmse": 0.041844280262308686,
+        "mcse_coverage": 0.014,
+        "mean_width": 0.729579634972687,
+        "n_reps": 100,
+        "note": "cumulative-weight clipping: biased under correct props",
+        "mean_weighted_nan_fraction": 0.018149599613840946
+      },
+      {
+        "estimator": "DR_crossfit_actionBlind_clip5",
+        "bias": -2.0422989580426374,
+        "rmse": 2.044260508701311,
+        "coverage": 0.0,
+        "mcse_bias": 0.008998312644124616,
+        "mcse_rmse": 0.009040274109538202,
+        "mcse_coverage": 0.0,
+        "mean_width": 0.2792128875754385,
+        "n_reps": 100,
+        "note": "intentional misspecified Q (actions pooled)",
+        "mean_weighted_nan_fraction": 0.0
+      },
+      {
+        "estimator": "DR_insample_LEAKY_clip5",
+        "bias": -1.3302996025673774,
+        "rmse": 1.4659688604679246,
+        "coverage": 0.08,
+        "mcse_bias": 0.06190312301570901,
+        "mcse_rmse": 0.047666039822581795,
+        "mcse_coverage": 0.027129319932501072,
+        "mean_width": 0.7861032981168485,
+        "n_reps": 100,
+        "note": "train==eval leakage; overconfident intervals expected",
+        "mean_weighted_nan_fraction": 0.0
+      }
+    ]
+  },
+  "no_coverage": {
+    "secret0": {
+      "target_truth": 0.3,
+      "population_identifiable": false,
+      "population_uncovered_mass": 1.0,
+      "uncovered_cells": [
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "secret1": {
+      "target_truth": 1.2,
+      "population_identifiable": false,
+      "population_uncovered_mass": 1.0,
+      "uncovered_cells": [
+        [
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    "note": "Both variants generate IDENTICAL logged behaviour-policy data but have different target values; no weighting/modeling can separate them. No point estimate or narrow interval is produced."
+  }
+}
